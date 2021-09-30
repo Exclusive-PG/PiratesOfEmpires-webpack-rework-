@@ -1,0 +1,79 @@
+@mixin CenterBlock($position){
+    position: $position;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+@mixin FlexBox{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+@mixin MainThemeGame{
+    color: #FBC72A;
+    background-color: #4A4A4A;
+}
+@mixin BtnCountRes{
+    font-weight: 800;
+    font-size: 25px;
+    border: 2px solid #fff;
+    padding: 8px 20px;
+}
+@mixin ProgressBarEnergy {
+    width: 300px;
+    height: 20px;
+    border-radius: 20px;
+}
+@mixin FormWinLock($backGround){
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: $backGround;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+  transition:all .5s;
+}
+@mixin DivBlockTxtWork{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+@mixin  SpanBlockTxtWork($lineHeight,$letterSpacing,$FontSize){
+    text-align: center; 
+    padding: 10px 12px;
+    border: 2px solid #fff;
+    letter-spacing: $letterSpacing;
+    line-height: $lineHeight;
+    font-size: $FontSize;
+    border-radius: 10px;
+    
+}
+@mixin SkillsIcons{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+@mixin ShowBlockSlow{
+    opacity: 1;
+    visibility: visible;
+}
+@mixin DescriptionSkills($top,$left){
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    background-color: rgba($color: #000000, $alpha: .7);
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 150px;
+    text-align: center;
+    top: $top;
+    left: $left;
+      &:hover{
+        cursor: pointer;
+      }
+}

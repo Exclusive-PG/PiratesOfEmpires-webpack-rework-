@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PiratesEmpires</title>
+</head>
+
+<body>
+    <div class="preloader">
+        <div class="loader"></div>
+    </div>
+    <section class="Game">
+        <div class="container">
+            <div class="start-game-inner" id="StartMenuSection">
+                <div class="name-game-logo">
+                    <div class="skull-anim 1">
+                       
+                    </div>
+                    <div class="skull-anim second">
+                        
+                    </div>
+                    Empire of Pirates
+                </div>
+                <div class="main-menu-game">
+                    <div class="" id="BtnPlayGame"><span class="">Играть</span></div>
+                    <div class="" id="BtnSaveGame" ><span class="">Сохранить</span></div>
+                    <div class="" id="BtnStaticticsGame"><span class="">Статистика</span></div>
+                </div>
+            </div>
+            <div class="interface" id="InterFace">
+                <div class="up-menu" id="UpMenu">
+                    <div class="money items"><i class="fas fa-coins fa-2x"></i>
+                        <span class="fieldMoney" id="FieldMoney">1000</span>
+                    </div>
+                    <div class="health items"><i class="fas fa-heartbeat fa-2x"></i>
+                        <span class="fieldHealth" id="FieldHealth"></span>
+                    </div>
+                    <div class="nigth items"><i class="far fa-moon fa-2x"></i>
+                        <span class="fieldMoon" id="FieldMoon">0</span>
+                    </div>
+
+                    <div class="foot items"><div class="MeatImage"></div>
+                        <span class="fieldFood" id="FieldFood">0</span>
+                    </div>
+                </div>
+                <div class="all-win-game">
+                    <div class="game-window">
+                        <div class="main-win-question-choice"><span class="txt-main-win-game">Йо-хо-хо,пират!Приветствую
+                                тебя в игре Empire of Pirates.Здесь тебя ждут захватывающие приключения.Сначало,расскажу
+                                о твоей истории:ты бедный пират,которого бросила команда и теперь тебе одному придётся
+                                добиваться успеха.(Запомни всего сразу не будет) Ниже у тебя есть выборы.Действую ,как
+                                пожелаешь нужным!Тысяча чертей и бутылка рома,пират.</span></div>
+                        <div class="answer-your-choice">
+                            <div class="ProgressBarExp">
+                                <div class="exp-person" id="expPerson"></div>
+
+                            </div>
+                            <div class="wrapper-skills">
+                                    <div class="btn-skills-all">
+                                        <div class="btn-check-skills" id=BtnCheckSkills><i class="far fa-user"></i></div>
+                                        <div class="circle-field-point" id="CirclePointSkills">
+                                            <span id="FieldShowPoint"></span>
+                                        </div>
+                                    </div>   
+                            </div>  
+                            <div class="BuyFood"><span id="BuyFood">Купить еду</span></div>
+                            <div class="BuyNight"><span id="BuyNight">Купить ночлег</span></div>
+                            <div class="Work"><span id='Works'>Работать</span></div>
+                            <div class="Exit"><span id="ExitOutsideGame">Выход</span></div>
+                        </div>
+                        <div class="btn-next-day" id="BtnNextDay"><i class="fas fa-angle-double-right fa-5x"></i></div>
+                    </div>
+                    <div class="game-food" id="GameFood">
+                        <div class="main-win-question-food"><span class="txt-win-question-food">Я смотрю ты решил
+                                подкрепиться перед тяжелым днём-это правильно!У нас расценки не из лучших ,но поверь
+                                лучше ты нигде не найдёшь!
+                                <div class="SpendMoneyField"><span id="MoneyForFood">Ты потратишь:0</span>
+                                    <span id="fieldPriceFood">1 паёк-15 пенсов!</span>
+                                </div>
+                        </div>
+
+                        <div class="btn-count-food">
+                            <div id="AddFood"><span class="AddFood">+</span></div>
+                            <div class="" id="FieldCountChoiceFood"><span>0</span></div>
+                            <div id="RemoveFood"><span class="RemoveFood">-</span></div>
+                            <div class="BtnBuyFood"><span class="TXTbtnBuyFood" id="BtnBuyFood">Купить</span></div>
+                        </div>
+                        <div class="btnBackFood">
+                            <div class="arrow-left-back-food" id="BackBtnFoodPage"><i
+                                    class="fas fa-arrow-left fa-2x"></i></div>
+                        </div>
+
+                    </div>
+                    <div class="game-night" id="GameNight">
+                        <div class="main-win-question-night"><span
+                                class="txt-win-question-night">Запомни,моряк.Море-морем,но сон по расписанию.Если ты не
+                                купишь ночлег и начнётся непогода ты пропадёшь.Лучше перестраховаться и отоспаться в
+                                тёплой постельке,если у тебя есть деньги.
+                                <div class="SpendMoneyFieldNight">Ты потратишь: <span id="MoneyForNight">0</span>
+                                    <span id="fieldPriceNight">1 ночлег-20 пенсов!</span>
+                                </div>
+                                
+                        </div>
+
+                        <div class="btn-count-night">
+                            <div id="AddNight"><span class="AddNight">+</span></div>
+                            <div class="" id="FieldCountChoiceNight"><span class="countNight">0</span></div>
+                            <div id="RemoveNight"><span class="RemoveNight">-</span></div>
+                            <div class="BtnBuyNight"><span class="txt-btnBuyNight" id="BtnBuynigth">Купить</span></div>
+                        </div>
+                        <div class="btnBackNight">
+                            <div class="arrow-left-back-food" id="BackBtnNigthPage"><i
+                                    class="fas fa-arrow-left fa-2x"></i></div>
+                        </div>
+                    </div>
+                    <div class="works-main-win" id="GameWorks">
+                        <div class="progress-bar-energy-power">
+                            <i class="fas fa-bolt"></i>
+                            <div class="energy-person" id="progressEnergy"></div>
+                        </div>
+                        <div id="win-works-all">
+                            <select class="select-works-all" name="" id="ChangeWork">
+                                <option value="0">....</option>
+                                <option value="1" class="">Работать в корчме</option>
+                                <option value="2" class="">Работать в порту</option>
+                                <option value="3" class="">Просить мылостиню</option>
+                                <option value="4" class="">Попробовать найти сокровище</option>
+                            </select>
+                        </div>
+                        <div class="main-game-win-work">
+                            <div id="WinCountWork">
+                                <div class="work-one" id="WorkOne">
+                                    <div><span class="main-quest-work-one"> Работа в кормче очень прибыльна ,если ты
+                                            вкладываешь сюда много сил.Также с повышением твоего ранга будут доступны
+                                            новые действия.</span></div>
+                                    <div><span class="rank-work-one" id="FieldRankWO">Твой ранг:отсутствует</span></div>
+
+                                </div>
+                                <div class="" id="WorkTwo">
+                                    <div class="main-quest-work-two"><span class="txt-quest-work-two">Когда ты пришёл в
+                                            порт.Тебя не покидала мысль,как подло поступила с тобой твоя команда и
+                                            поэтому ты хочешь вернуться к истокам ты же все таки прирожденный пират.В
+                                            будущём может быть у тебя будет свой корабль,но об этом позже.На этой работе
+                                            у тебя будут свои обязанности от низко- до высокоуровневых заданий ,поэтому
+                                            старайся,пират!</span></div>
+                                    <div class="field-rank-work-two"><span class="RankWorkTwo" id="RankWorkTwoId">Твой
+                                            ранг:не определён</span></div>
+                                </div>
+                                <div class="" id="WorkThree">
+                                    <div class="main-quest-work-three"><span class="txt-quest-work-three">Просить
+                                            мылостиню для пирата-хуже черной метки,но никто не застрахован от такой
+                                            участи.Запомни,пират,это затея не принесёт тебе уйму сокровища.На первый раз
+                                            Пиратский кодекс чести тебя прощает!</span></div>
+                                    <div class="FieldPoor" id="FieldPoor">Тебе пока ничего не дали</div>
+                                </div>
+                                <div class="" id="WorkFour">
+                                    <div class="main-quest-work-four">
+                                        <span class="txt-quest-work-four">Какой пират без сокровищ?Это очень прибыльное
+                                            дело,но больше зависит не от твоих способностей,а от удачи.Пусть тебе
+                                            повезёт,пират!</span>
+                                    </div>
+                                    <div class="screen-random-money"><span id="ScreenRandomMoney"
+                                            class="txt-screen-random-money">Ничего не найдено</span></div>
+                                    <!--- <div class="btn-found-treasure">
+                                                                <span class="txt-btn-found-treasure" id="btnRandomSearch">Искать</span>
+                                                            </div>-->
+                                </div>
+
+                                <div class="btn-worked">
+                                    <span class="txt-btn-worked" id="btnWorked">Работать</span>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="btnBackWork">
+                            <div class="arrow-left-back-food" id="BackBtnWorkPage"><i
+                                    class="fas fa-arrow-left fa-2x"></i></div>
+                        </div>
+
+                    </div>
+                        <div class="win-skills-person" id="WinSkills">
+                                <div class="skills-web">
+                                        <span class="skill-health" id="SkillHealth"><i class="fas fa-heart fa-2x"></i>
+                                            <span class="description-skill-health">Увеличивает максимальное количество здоровья на 1%</span>
+                                        </span>
+                                      
+                                     
+                                    <div class="two-rows">
+                                     <div class="skills-descrip-eloquence">
+                                        <span class="skill-eloquence"><i id="skillEloquence" class="fas fa-comments-dollar fa-2x"></i></span> 
+                                        <span class="description-skill-eloquence">Увеличивает ваш уровень красноречия.Цены у торговцев снижены.</span>
+                                    </div>    
+                                    <div class="skills-descrip-power">
+                                        <span class="skill-power" id="SkillPower"></span> 
+                                        <span class="description-skill-power">Увеличивается ваш уровень силы.Вы можете выполнять более сложные работы</span>
+                                    </div>
+                                    </div>  
+                                </div>
+
+                                 <div class="btnBackSkills">
+                            <div class="arrow-left-back-food" id="BackBtnSkillsPage"><i
+                                    class="fas fa-arrow-left fa-2x"></i></div>
+                                 </div>
+                        </div>
+                           
+                            </div>
+                </div>
+            </div>
+        </div>
+
+        </div>
+    </section>
+    <section class="SettingAdd">
+        <!--- <div class="btn-backward-forward-arrow">
+            <div class="backward" id="BackWard"><span><i class="fas fa-arrow-left fa-2x"></i></span></div>
+            <div class="forward" id="FordWard"><span><i class="fas fa-arrow-right fa-2x"></i></span></div>
+        </div>-->
+        <div class="transition-next-day">
+            <div class="txt-next-day"></div>
+        </div>
+        <div class="win-lose-">
+            <div class="txt-win-lose-"></div>
+        </div>
+        <div class="up-level" id="WinLevelUp">
+            <div class="txt-up-level">Уровень повышен</div>
+                <div class="arrows">
+                 <div class="arrows1 arrowImg"></div>
+                 <div class="arrows2 arrowImg"></div>
+                 <div class="arrows3 arrowImg"></div>
+                
+                </div>
+                <div class="your-level-now" id="FieldYourLevel"></div>
+                <div class="btn-agree-level" id="AgreeLevelUp">OK</div>
+        </div>
+        <div class="all-alers-win" id="WinAlert">
+            <div class="win-alert" >
+                <div class="type-alert" id="TypeAlert"></div>
+                <div class="txt-alert" id="TextAlert"></div>
+            </div>
+        </div>
+        <div class="alert-message" id="AlertMessage">
+        <div class="wrapper-disclaimer">
+            <h1 class="disclaimer"><center>Дисклеймер</center></h1>
+                    <div ><p class="txt-disclaimer">
+                        Добро пожаловать,в мою первую игру!Игра находиться в Alpha-версии,то есть всё ,что вы видете может измениться в следующем обновлении.
+                        Есть некоторые недоработки,но всё будет исправлятьcя в дальнейшем.Не судите сторого.Удачи! Версия: 0.0.1
+                    </p></div>
+                    <div class="btn-i-agree"><span id="BtnAlertMessage">Понятно</span></div>
+                </div>          
+        </div>
+    </section>
+   
+</body>
+
+</html>
